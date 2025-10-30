@@ -20,10 +20,9 @@ python3 --version
 
 ### Clone repo
 ```
-git clone https://github.com/langchain-ai/langchain-academy.git
+git clone https://github.com/marcos-sb/langchain-academy.git
 $ cd langchain-academy
 ```
-Or, if you prefer, you can download a zip file [here](https://github.com/langchain-ai/langchain-academy/archive/refs/heads/main.zip).
 
 ### Create an environment and install dependencies
 #### Mac/Linux/WSL

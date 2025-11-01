@@ -34,7 +34,12 @@ def divide(a: int, b: int) -> float:
 tools = [add, multiply, divide]
 
 # Define LLM with bound tools
-llm = ChatOpenAI(model="gpt-4o")
+llm = ChatOpenAI(
+    model="qwen/qwen3-4b-2507",
+    base_url="http://localhost:1234/v1",
+    api_key="nothing",
+    temperature=0.7,
+    max_tokens=512)
 llm_with_tools = llm.bind_tools(tools)
 
 # System message

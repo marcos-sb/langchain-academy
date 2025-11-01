@@ -56,10 +56,6 @@ $ export API_ENV_VAR="your-api-key-here"
 PS> $env:API_ENV_VAR = "your-api-key-here"
 ```
 
-### Set OpenAI API key
-* If you don't have an OpenAI API key, you can sign up [here](https://openai.com/index/openai-api/).
-*  Set `OPENAI_API_KEY` in your environment 
-
 ### Sign up and Set LangSmith API
 * Sign up for LangSmith [here](https://docs.langchain.com/langsmith/create-account-api-key#create-an-account-and-api-key), find out more about LangSmith and how to use it within your workflow [here](https://www.langchain.com/langsmith). 
 *  Set `LANGSMITH_API_KEY`, `LANGSMITH_TRACING_V2=true` `LANGSMITH_PROJECT="langchain-academy"`in your environment 

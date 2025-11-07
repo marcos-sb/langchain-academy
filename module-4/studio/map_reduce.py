@@ -15,7 +15,12 @@ joke_prompt = """Generate a joke about {subject}"""
 best_joke_prompt = """Below are a bunch of jokes about {topic}. Select the best one! Return the ID of the best one, starting 0 as the ID for the first joke. Jokes: \n\n  {jokes}"""
 
 # LLM
-model = ChatOpenAI(model="gpt-4o", temperature=0) 
+model = ChatOpenAI(
+    model="qwen/qwen3-4b-2507",
+    base_url="http://localhost:1234/v1",
+    api_key="nothing",
+    temperature=0,
+    max_tokens=512)
 
 # Define the state
 class Subjects(BaseModel):
